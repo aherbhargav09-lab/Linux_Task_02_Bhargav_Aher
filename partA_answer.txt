@@ -1,0 +1,8 @@
+Current Username:
+The name of the user currently logged into the Linux system.
+UID (User ID):
+A unique numerical identifier assigned to each user account in Linux.
+GID (Group ID):
+A unique numerical identifier assigned to a user's primary group.
+/etc/passwd contains:
+Information about user accounts, including username, UID, GID, home directory, and default shell.

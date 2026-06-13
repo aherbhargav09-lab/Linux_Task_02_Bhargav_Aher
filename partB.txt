@@ -1,0 +1,73 @@
+LINUX TASK 02 - PART B
+CREATE USERS & GROUPS
+
+STEP 1: CREATE GROUPS
+
+sudo groupadd interns
+sudo groupadd cyberteam
+
+---
+
+STEP 2: CREATE USERS
+
+sudo useradd -m student1
+sudo useradd -m student2
+sudo useradd -m student3
+
+---
+
+STEP 3: SET PASSWORDS
+
+sudo passwd student1
+sudo passwd student2
+sudo passwd student3
+
+---
+
+STEP 4: ADD USERS TO GROUPS
+
+sudo usermod -aG interns student1
+
+sudo usermod -aG cyberteam student2
+
+sudo usermod -aG interns,cyberteam student3
+
+---
+
+STEP 5: VERIFY GROUP MEMBERSHIP
+
+groups student1
+groups student2
+groups student3
+
+---
+
+STEP 6: VERIFY USER INFORMATION
+
+id student1
+id student2
+id student3
+
+---
+
+EXPECTED RESULTS
+
+student1 → interns
+
+student2 → cyberteam
+
+student3 → interns, cyberteam
+
+---
+
+SCREENSHOTS REQUIRED
+
+1. groups student1
+
+2. id student1
+
+3. id student2
+
+---
+
+END OF PART B

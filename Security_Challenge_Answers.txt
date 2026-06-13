@@ -1,0 +1,23 @@
+Part F: Security Challenge
+File	Recommended Permission	Reason
+password_backup.txt	600	Sensitive password data
+public_notice.txt	644	Everyone can read
+system_log.txt	640	Admin writes, others read
+personal_notes.txt	600	Personal information
+Explanation
+
+password_backup.txt
+
+Contains confidential information and should only be accessible to the owner.
+
+public_notice.txt
+
+Public information that everyone can read.
+
+system_log.txt
+
+Administrators need write access while authorized users can read logs.
+
+personal_notes.txt
+
+Private data that should not be accessible to other users.

@@ -1,0 +1,123 @@
+# Permission Analysis
+
+## Linux File Permission Analysis
+
+### 1. Permission: 755
+
+**Numeric:** 755
+
+**Symbolic:** rwxr-xr-x
+
+| Category | Rights               |
+| -------- | -------------------- |
+| Owner    | Read, Write, Execute |
+| Group    | Read, Execute        |
+| Others   | Read, Execute        |
+
+**Explanation:**
+The owner has full control of the file or directory. Group members and other users can read and execute but cannot modify it.
+
+**Real-World Use Case:**
+
+* Website directories
+* Shell scripts
+* Application folders
+
+---
+
+### 2. Permission: 644
+
+**Numeric:** 644
+
+**Symbolic:** rw-r--r--
+
+| Category | Rights      |
+| -------- | ----------- |
+| Owner    | Read, Write |
+| Group    | Read        |
+| Others   | Read        |
+
+**Explanation:**
+The owner can view and modify the file. Everyone else can only read it.
+
+**Real-World Use Case:**
+
+* Text documents
+* Configuration files
+* README files
+
+---
+
+### 3. Permission: 777
+
+**Numeric:** 777
+
+**Symbolic:** rwxrwxrwx
+
+| Category | Rights               |
+| -------- | -------------------- |
+| Owner    | Read, Write, Execute |
+| Group    | Read, Write, Execute |
+| Others   | Read, Write, Execute |
+
+**Explanation:**
+Everyone on the system has full access to the file or directory.
+
+**Real-World Use Case:**
+
+* Temporary testing environments only
+
+**Security Warning:**
+This permission is highly insecure and should be avoided on production systems because any user can modify or delete the file.
+
+---
+
+### 4. Permission: 600
+
+**Numeric:** 600
+
+**Symbolic:** rw-------
+
+| Category | Rights      |
+| -------- | ----------- |
+| Owner    | Read, Write |
+| Group    | No Access   |
+| Others   | No Access   |
+
+**Explanation:**
+Only the owner can read and modify the file.
+
+**Real-World Use Case:**
+
+* SSH private keys
+* Password backups
+* Sensitive personal files
+
+---
+
+### 5. Permission: 700
+
+**Numeric:** 700
+
+**Symbolic:** rwx------
+
+| Category | Rights               |
+| -------- | -------------------- |
+| Owner    | Read, Write, Execute |
+| Group    | No Access            |
+| Others   | No Access            |
+
+**Explanation:**
+Only the owner has complete control over the file or directory.
+
+**Real-World Use Case:**
+
+* Private scripts
+* Personal directories
+* Administrative tools
+
+---
+
+## Conclusion
+
+Linux file permissions are an essential security feature that controls access to files and directories. Proper permission settings help protect sensitive information, prevent unauthorized access, and support the Principle of Least Privilege. Choosing the correct permissions is important for maintaining a secure Linux environment.

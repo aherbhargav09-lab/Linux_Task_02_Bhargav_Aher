@@ -1,0 +1,138 @@
+LINUX TASK 02 - COMMANDS USED
+
+=========================================
+PART A: UNDERSTANDING USERS
+===========================
+
+whoami
+Purpose: Displays the currently logged-in username.
+
+id
+Purpose: Displays User ID (UID), Group ID (GID), and group membership information.
+
+cat /etc/passwd
+Purpose: Displays information about all user accounts on the system.
+
+=========================================
+PART B: CREATE USERS & GROUPS
+=============================
+
+sudo groupadd interns
+Purpose: Creates a group named interns.
+
+sudo groupadd cyberteam
+Purpose: Creates a group named cyberteam.
+
+sudo useradd -m student1
+Purpose: Creates a user named student1 with a home directory.
+
+sudo useradd -m student2
+Purpose: Creates a user named student2 with a home directory.
+
+sudo useradd -m student3
+Purpose: Creates a user named student3 with a home directory.
+
+sudo passwd student1
+Purpose: Sets a password for student1.
+
+sudo passwd student2
+Purpose: Sets a password for student2.
+
+sudo passwd student3
+Purpose: Sets a password for student3.
+
+sudo usermod -aG interns student1
+Purpose: Adds student1 to the interns group.
+
+sudo usermod -aG cyberteam student2
+Purpose: Adds student2 to the cyberteam group.
+
+sudo usermod -aG interns,cyberteam student3
+Purpose: Adds student3 to both groups.
+
+groups student1
+Purpose: Displays groups assigned to student1.
+
+groups student2
+Purpose: Displays groups assigned to student2.
+
+groups student3
+Purpose: Displays groups assigned to student3.
+
+id student1
+Purpose: Displays user and group information for student1.
+
+id student2
+Purpose: Displays user and group information for student2.
+
+id student3
+Purpose: Displays user and group information for student3.
+
+=========================================
+PART C: FILE OWNERSHIP
+======================
+
+mkdir CyberSecurity_Project
+Purpose: Creates a new directory.
+
+cd CyberSecurity_Project
+Purpose: Changes the current directory.
+
+touch report.txt
+Purpose: Creates an empty file.
+
+touch notes.txt
+Purpose: Creates an empty file.
+
+touch credentials.txt
+Purpose: Creates an empty file.
+
+ls -l
+Purpose: Displays detailed file information including ownership and permissions.
+
+sudo chown student2 report.txt
+Purpose: Changes ownership of report.txt to student2.
+
+=========================================
+PART D: FILE PERMISSIONS
+========================
+
+touch security_policy.txt
+Purpose: Creates a new file.
+
+ls -l security_policy.txt
+Purpose: Displays current permissions.
+
+chmod 444 security_policy.txt
+Purpose: Sets file to Read Only.
+
+chmod 664 security_policy.txt
+Purpose: Sets Read and Write permissions.
+
+chmod 777 security_policy.txt
+Purpose: Grants Full Access to everyone.
+
+=========================================
+GENERAL COMMANDS
+================
+
+pwd
+Purpose: Displays the current working directory.
+
+hostname
+Purpose: Displays the system hostname.
+
+date
+Purpose: Displays the current date and time.
+
+uptime
+Purpose: Displays system uptime.
+
+clear
+Purpose: Clears the terminal screen.
+
+history
+Purpose: Displays command history.
+
+=========================================
+
